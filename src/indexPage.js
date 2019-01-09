@@ -278,7 +278,7 @@ class indexPage extends Component {
                   <div className="circle" />
                   <div className="circle" />
                   <div className="circle" />
-                  <img src="..\icons\iphone.png" alt="" />
+                  {/* <img src="..\icons\iphone.png" alt="" /> */}
                 </div>
                 {/* <vd /> */}
                 <div className="promotion-container-inner promotion-text">

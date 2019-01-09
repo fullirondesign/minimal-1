@@ -29,6 +29,8 @@ code {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
 }
 
 .section#aboutMinimal {
@@ -95,17 +97,31 @@ code {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.496);
 }
 
 .nav-link {
   margin-left: 4px;
   padding: 12px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  min-width: 100px;
 }
 
 .nav-link:hover {
   -webkit-box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
           box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
+  font-weight: 700;
 }
 
 .hr {
