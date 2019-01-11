@@ -34,7 +34,7 @@ class indexPage extends Component {
         );
     
         if (this.state.promotion2Flag !== tag) {
-          console.log("change");
+          // console.log("change");
           this.setState({
             promotion2Flag: tag
           });
@@ -69,7 +69,7 @@ class indexPage extends Component {
                 <div
                   className="promotion-nav-link"
                   id="mobile"
-                  onClick={e => this.handlePromotion1("mobile", e)}
+                  onClick={(e) => this.handlePromotion1("mobile", e)}
                 >
                   <img src="..\icons\mobile.png" alt="" />
                 </div>
