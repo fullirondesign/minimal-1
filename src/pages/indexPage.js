@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Showcase2 from "../components/Showcase2"
+import Slider from "../components/Showcase2"
 // import "./App.css";
 
 class indexPage extends Component {
@@ -121,7 +121,7 @@ class indexPage extends Component {
         </div>
         
 
-        <Showcase2/>
+        <Slider/>
         {/* showcase 2 */}
         
 
