@@ -1,41 +1,27 @@
-import React, { Component } from "react";
-
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import indexPage from "./indexPage";
-import servicesPage from "./servicesPage";
-import contactsPage from "./contactsPage";
+import React, { Component } from "react"
+import css from "./css/index.css"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import indexPage from "./pages/indexPage"
+import servicesPage from "./pages/servicesPage"
+import contactsPage from "./pages/contactsPage"
+import Header from "./components/Header"
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        {/* header */}
-        <div className="App">
-          <div className="section header">
-            <div className="container logo">
-              <Link to="/products" className="nav-link">
-                <img src="..\icons\logo.png" alt="minimal" href="" />
-              </Link>
-            </div>
-            <div className="container nav">
-              <Link to="/products" className="nav-link">
-                products
-              </Link>
-              <Link to="/services" className="nav-link">
-                services
-              </Link>
-              <Link to="/contacts" className="nav-link">
-                contacts
-              </Link>
-            </div>
-          </div>
+      <div className="App">
+        
 
-          <Route path="/products" exact component={indexPage} />
-          <Route path="/services" exact component={servicesPage} />
-          <Route path="/contacts" exact component={contactsPage} />
+        {/* Router is a "higher order" component, that is looking for URL entered,
+         checks with option given and renders needed component for us */}
+        <Router>
+        <Header /> 
+          <Route path="/products" exact component={indexPage} />{" "}
+          <Route path="/services" exact component={servicesPage} />{" "}
+          <Route path="/contacts" exact component={contactsPage} />{" "}
           <Route path="/" exact component={indexPage} />
-        </div>
-      </Router>
+        </Router>
+      </div>
     );
   }
 }
