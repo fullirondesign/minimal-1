@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import changeSliderPage from "./functions/changeSliderPage"
 
-const sliderPage = (pageContent) => (
+const sliderButton = (pageContent) => (
   <div className="promotion-container">
     <div className="promotion-container-inner">
       <div className="circle" />
@@ -69,7 +69,7 @@ const Slider = () => {
       </div>
 
       <div>
-        {(sliderFlag === "1" || "2" || "3" || "4" || "5" || "6") && sliderPage(sliderFlag)}
+        {(sliderFlag === "1" || "2" || "3" || "4" || "5" || "6") && sliderButton(sliderFlag)}
       </div>
     </div>
   );
