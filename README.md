@@ -14,7 +14,7 @@ Project source - Git repository:
 
     yarn && yarn start
 
-[Project Status](./Project-Status-a068e6c4-f293-46ec-a297-95be0ea5d40f.csv)
+[Project Status](https://www.notion.so/cd195b5fbd044308b05c18a4dab7b97b)
 
 ## **Used stack:**
 
@@ -54,4 +54,4 @@ Project source - Git repository:
 
 ### Design
 
-![](GetImage-14ba91e0-277e-46da-a5ef-f46e1537d86f.png)
+![](design.png)
