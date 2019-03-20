@@ -6,13 +6,13 @@ const Slider = () => {
  
   return (
     <div className="section promotion promotion-2">
-      <div className="promotion-2-nav">
+      <div className="promotion-2-nav"> 
         <div
           className="promotion-2-nav-link"
           id="1"
           onClick={e => changeSliderPage(sliderFlag, handlePromotion, "1", e)}
         >
-          <img src="" alt="" />1
+          <img src="" alt="" />1 
         </div>
         <div
           className="promotion-2-nav-link"

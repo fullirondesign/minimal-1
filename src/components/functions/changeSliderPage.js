@@ -15,7 +15,7 @@ export default function changeSliderPage(sliderFlag, handlePromotion, tag, e) {
     handlePromotion(tag); //changing state with imported function from props 
   } else
     try {
-      console.log("no-change"); // no change indicator
+      console.log("no-change"); // NO change indicator
     } catch (e) {
       e.console.error(); //error 
     }
