@@ -1,18 +1,35 @@
 import React, { useState } from "react"
 import changeSliderPage from "./functions/changeSliderPage"
 
+const sliderPage = (pageContent) => (
+  <div className="promotion-container">
+    <div className="promotion-container-inner">
+      <div className="circle" />
+      <div className="circle" />
+      <div className="circle" />
+      <img src="..\icons\iphone.png" alt={pageContent} />
+    </div>
+    {/* <vd /> */}
+    <div className="promotion-container-inner promotion-text">
+      {pageContent}
+    </div>
+  </div>)
+
+
+
+
 const Slider = () => {
   const [sliderFlag, handlePromotion] = useState("1")
- 
+
   return (
     <div className="section promotion promotion-2">
-      <div className="promotion-2-nav"> 
+      <div className="promotion-2-nav">
         <div
           className="promotion-2-nav-link"
           id="1"
           onClick={e => changeSliderPage(sliderFlag, handlePromotion, "1", e)}
         >
-          <img src="" alt="" />1 
+          <img src="" alt="" />1
         </div>
         <div
           className="promotion-2-nav-link"
@@ -52,78 +69,7 @@ const Slider = () => {
       </div>
 
       <div>
-        {sliderFlag === "1" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">1</div>
-          </div>
-        )}
-        {sliderFlag === "2" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">2</div>
-          </div>
-        )}
-        {sliderFlag === "3" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">3</div>
-          </div>
-        )}
-        {sliderFlag === "4" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">4</div>
-          </div>
-        )}
-        {sliderFlag === "5" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">5</div>
-          </div>
-        )}
-        {sliderFlag === "6" && (
-          <div className="promotion-container">
-            <div className="promotion-container-inner">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <img src="..\icons\iphone.png" alt="" />
-            </div>
-            {/* <vd /> */}
-            <div className="promotion-container-inner promotion-text">6</div>
-          </div>
-        )}
+        {(sliderFlag === "1" || "2" || "3" || "4" || "5" || "6") && sliderPage(sliderFlag)}
       </div>
     </div>
   );

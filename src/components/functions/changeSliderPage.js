@@ -3,8 +3,8 @@
 
 // const [sliderFlag, handlePromotion] = useState("1")
 
-export default function changeSliderPage(sliderFlag, handlePromotion, tag, e) {
-  e.preventDefault();
+export default function changeSliderPage(sliderFlag, handlePromotion, tag) {
+  
   console.log(
     "The slider link was clicked.",
     `It was: ${sliderFlag}, became: ${tag}`
