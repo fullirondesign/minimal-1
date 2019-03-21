@@ -14,12 +14,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.promotion-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 1 / 4 / 5;
+}
+
+.promotion-text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 5 / 4 / 9;
 }
 
 .promotion-nav {
-  position: relative;
-  width: 30%;
-  left: 70%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 6 / 2 / 9;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +75,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 123px;
-  height: 123px;
+  height: 100%;
   margin: 0px;
 }
 
@@ -72,52 +97,12 @@
           box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
 }
 
-.promotion-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 100%;
-  z-index: 0;
-  position: relative;
-  margin-top: 24px;
-}
-
-.promotion-container vd {
+.promotion-containervd {
   width: 2px;
   height: 100%;
   min-height: 300px;
   background: rgba(0, 0, 0, 0.224);
   margin: 22px;
-}
-
-.promotion-container-inner {
-  min-width: 300px;
-  width: 50%;
-  max-width: 400px;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 40px 40px 40px;
 }
 
 .promotion-container-inner.promotion-text {
@@ -335,9 +320,6 @@ code {
 .section {
   max-width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

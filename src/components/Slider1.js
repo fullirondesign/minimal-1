@@ -7,36 +7,38 @@ const sliderPages = ["desktop", "tablet", "mobile"];
 
 // template TODO: content rendering
 const page = flag => (
-  <div className="promotion-container">
-    <div className="promotion-container-inner">
-      <div className="circle" />
-      <div className="circle" />
-      <div className="circle" />
-      {flag === "mobile" && <img src="..\icons\iphone.png" alt="" />}
-      {flag === "tablet" && (
-        <img width="200px" heigh="auto" src="..\img\svg\apple.svg" alt="" />
-      )}
-      {flag === "desktop" && (
-        <img
-          width="200px"
-          height="auto"
-          src="\img\SVG\white Image.svg"
-          alt=""
-        />
-      )}
+  <>
+    <div className="promotion-image">
+      <div className="promotion-container-inner-image">
+        <div className="circle" />
+        <div className="circle" />
+        <div className="circle" />
+        {flag === "mobile" && <img src="..\icons\iphone.png" alt="" />}
+        {flag === "tablet" && (
+          <img width="200px" heigh="auto" src="..\img\svg\apple.svg" alt="" />
+        )}
+        {flag === "desktop" && (
+          <img
+            width="200px"
+            height="auto"
+            src="\img\SVG\white Image.svg"
+            alt=""
+          />
+        )}
+      </div>
     </div>
-
-    <div className="promotion-container-inner promotion-text">
+    <div className="promotion-text">
       {/* {flag} */}
-      <div className="promotion-container-inner-text--top">
+      <div className="promotion-container-text--top">
         {planetSVG()}
-        <div className="promotion-container-inner-text--top-rewardText">
+        <div className="promotion-container-text--top-rewardText">
           app of the year
         </div>
       </div>
+
       <div className="promotion-container-inner-text--bottom" />
     </div>
-  </div>
+  </>
 );
 
 const RenderSliderPage = sliderFlag => (
