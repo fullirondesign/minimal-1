@@ -6,16 +6,29 @@ const sliderPages = ["desktop", "tablet", "mobile"];
 
 // template TODO: content rendering
 const page = flag => (
+
   <div className="promotion-container">
+  
     <div className="promotion-container-inner">
       <div className="circle" />
       <div className="circle" />
       <div className="circle" />
-      <img src="..\icons\iphone.png" alt="" />
+      {flag==='mobile' && <img src="..\icons\iphone.png" alt="" />}
+      {flag==='tablet' && <img width='200px' heigh="auto" src="..\img\svg\apple.svg" alt="" />}
+      {flag==='desktop' && <img width='200px' height="auto" src="\img\SVG\white Image.svg" alt="" />} 
+      
     </div>
     
     <div className="promotion-container-inner promotion-text">
-      {flag}
+      {/* {flag} */}
+      <div className="promotion-container-inner-text--top">
+        
+        <planetSVG/>
+        <div className="promotion-container-inner-text--top-rewardText">
+          app of the year
+        </div>
+      </div>
+      <div className="promotion-container-inner-text--bottom"></div>
     </div>
   </div>
 );
@@ -40,7 +53,7 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
 );
 
 const Slider1 = () => {
-  const [sliderFlag, handlePromotion] = useState("desktop");
+  const [sliderFlag, handlePromotion] = useState("mobile");
   return (
     <div className="section promotion">
       <div className="promotion-nav">

@@ -21,6 +21,14 @@
   text-transform: uppercase;
 }
 
+@mixin text-promo-customSize($size) {
+  font-family: $font-sans;
+  font-size: $size;
+
+  color: rgba(0, 0, 0, 0.598);
+  text-transform: uppercase;
+}
+
 @mixin text-regular {
   font-family: $font-sans;
   font-size: 16px;
@@ -30,7 +38,8 @@
 
 $background-default: rgb(23, 192, 181);
 
-$font-sans: "Roboto", sans-serif;
+$font-sans: "Roboto",
+sans-serif;
 
 body {
   margin: 0;
@@ -60,21 +69,25 @@ code {
     align-self: center;
     box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
   }
+
   &#aboutMinimal {
     flex-direction: column;
     min-height: 700px;
   }
+
   &.sale {
     min-height: 500px;
     width: 100%;
     background: #48d7b1;
     @include flex-row(center);
   }
+
   &#copyright {
     @include flex-row(center);
     padding: 16px;
   }
 }
+
 .container {
   display: flex;
 
@@ -94,6 +107,7 @@ code {
   align-content: center;
   justify-content: center;
   @include text-regular();
+
   &-link {
     margin-left: 4px;
     padding: 12px;
@@ -101,6 +115,7 @@ code {
     text-decoration: none;
     font-weight: 400;
     min-width: 100px;
+
     &:hover {
       box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
       font-weight: 700;
@@ -119,12 +134,13 @@ code {
 
 .promotion {
   background: rgb(31, 208, 196);
-  background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%); 
+  background: linear-gradient(to bottom, #00b7ea 0%, #009ec3 100%);
   min-height: 539px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   &-nav {
     position: absolute;
     right: 0;
@@ -134,6 +150,7 @@ code {
     justify-self: flex-end;
     align-items: center;
     justify-content: center;
+
     img {
       height: 60%;
       margin: 20%;
@@ -145,19 +162,24 @@ code {
       display: flex;
       align-items: center;
       justify-content: center;
+
       &#desktop {
         background: rgba(14, 176, 165, 0.183);
         border-bottom-left-radius: 4px;
       }
+
       &#tablet {
         background: rgba(10, 160, 150, 0.184);
       }
+
       &#mobile {
         background: rgba(3, 140, 140, 0.19);
       }
+
       width: 123px;
       height: 123px;
       margin: 0px;
+
       &:hover {
         box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
       }
@@ -176,6 +198,7 @@ code {
     z-index: 0;
     position: relative;
     margin-top: 24px;
+
     vd {
       width: 2px;
       height: 100%;
@@ -183,6 +206,7 @@ code {
       background: rgba(0, 0, 0, 0.224);
       margin: 22px;
     }
+
     &-inner {
       // background: orange;
       min-width: 300px;
@@ -193,21 +217,33 @@ code {
       justify-content: center;
       align-items: center;
       padding: 40px 40px 40px 40px;
+      
+      &-text {
+        &--top{
+          &-rewardText {
+
+          }
+        }
+      }
+
       &.promotion-text {
         background: rgba(255, 255, 255, 0.054);
         border-left: 3px solid rgba(0, 0, 0, 0.217);
         border-bottom-right-radius: 16px;
         border-top-right-radius: 16px;
         border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px; 
-       
+        border-top-left-radius: 3px;
+
       }
+
       img {
         z-index: 5;
         position: absolute;
       }
+
       .circle {
         $circle-size: 470px;
+
         &:nth-child(1) {
           border-radius: 50%;
           background: rgba(255, 255, 255, 0.068);
@@ -216,6 +252,7 @@ code {
           position: absolute;
           z-index: 0;
         }
+
         &:nth-child(2) {
           border-radius: 50%;
           background: rgba(255, 255, 255, 0.074);
@@ -224,6 +261,7 @@ code {
           position: absolute;
           z-index: 1;
         }
+
         &:nth-child(3) {
           border-radius: 50%;
           background: rgba(255, 255, 255, 0.177);
@@ -241,11 +279,13 @@ code {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 640px;
+
     &-nav {
       justify-content: space-between;
       width: 100%;
       align-self: flex-start;
       display: flex;
+
       &-link {
         text-transform: uppercase;
         background: rgba(146, 171, 169, 0.238);
@@ -257,18 +297,22 @@ code {
         justify-content: center;
         border-left: 2px solid #9b9b9b34;
         @include text-regular();
+
         &#desktop {
           background: rgb(14, 176, 165);
         }
+
         &#tablet {
           background: rgb(10, 160, 150);
         }
+
         &#mobile {
           background: rgb(3, 140, 140);
         }
 
         height: 123px;
         margin: 0px;
+
         &:hover {
           box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
         }
@@ -282,6 +326,7 @@ code {
   align-items: center;
   justify-content: center;
   padding: 40px 0 40px 0;
+
   &-circle {
     width: 400px;
     height: 400px;
@@ -289,21 +334,25 @@ code {
     border-radius: 50%;
     margin-top: 40px;
   }
-  
+
   .text {
     @include text-promo;
+
     &-promo {
       @include text-promo;
       padding-bottom: 2em;
     }
+
     &-regular {
       @include text-regular;
       padding: 2em;
     }
   }
+
   &-img {
     padding: 50px 20px 60px 20px;
     height: 100px;
+
     &-text {
       position: relative;
       bottom: 40px;
