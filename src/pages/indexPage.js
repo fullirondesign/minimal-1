@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Slider from "../components/Showcase2"
+import Slider1 from "../components/Slider1"
+import Slider2 from "../components/Slider2"
 // import "./App.css";
 
 class indexPage extends Component {
@@ -29,74 +30,8 @@ class indexPage extends Component {
     let { promotion1Flag, promotion2Flag } = this.state;
     return (
       <div>
-        {/* showcase 1 */}
-        <div className="section promotion">
-          <div className="promotion-nav">
-            <div
-              className="promotion-nav-link"
-              id="desktop"
-              onClick={e => this.handlePromotion1("desktop", e)}
-            >
-              <img src="..\icons\desktop.png" alt="" />
-            </div>
-            <div
-              className="promotion-nav-link"
-              id="tablet"
-              onClick={e => this.handlePromotion1("tablet", e)}
-            >
-              <img src="..\icons\tablet.png" alt="" />
-            </div>
-            <div
-              className="promotion-nav-link"
-              id="mobile"
-              onClick={e => this.handlePromotion1("mobile", e)}
-            >
-              <img src="..\icons\mobile.png" alt="" />
-            </div>
-          </div>
-          {promotion1Flag === "desktop" && (
-            <div className="promotion-container">
-              <div className="promotion-container-inner">
-                <div className="circle" />
-                <div className="circle" />
-                <div className="circle" />
-                <img src="..\icons\iphone.png" alt="" />
-              </div>
-              {/* <vd /> */}
-              <div className="promotion-container-inner promotion-text">
-                desktop
-              </div>
-            </div>
-          )}
-          {promotion1Flag === "tablet" && (
-            <div className="promotion-container">
-              <div className="promotion-container-inner">
-                <div className="circle" />
-                <div className="circle" />
-                <div className="circle" />
-                <img src="..\icons\iphone.png" alt="" />
-              </div>
-              {/* <vd /> */}
-              <div className="promotion-container-inner promotion-text">
-                tablet
-              </div>
-            </div>
-          )}
-          {promotion1Flag === "mobile" && (
-            <div className="promotion-container">
-              <div className="promotion-container-inner">
-                <div className="circle" />
-                <div className="circle" />
-                <div className="circle" />
-                <img src="..\icons\iphone.png" alt="" />
-              </div>
-              {/* <vd /> */}
-              <div className="promotion-container-inner promotion-text">
-                mobile
-              </div>
-            </div>
-          )}
-        </div>
+
+        <Slider1/>
 
         {/* About */}
         <div className="section aboutMinimal" id="aboutMinimal">
@@ -121,7 +56,7 @@ class indexPage extends Component {
         </div>
         
 
-        <Slider/>
+        <Slider2/>
         {/* showcase 2 */}
         
 

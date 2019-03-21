@@ -2,48 +2,48 @@ import React, { useState } from "react";
 import changeSliderPage from "./functions/changeSliderPage";
 
 // data
-const sliderPages = ["1", "2", "3", "4", "5", "6"];
+const sliderPages = ["desktop", "tablet", "mobile"];
 
 // template TODO: content rendering
 const page = flag => (
   <div className="promotion-container">
     <div className="promotion-container-inner">
       <div className="circle" />
+      <div className="circle" />
+      <div className="circle" />
+      <img src="..\icons\iphone.png" alt="" />
     </div>
+    
     <div className="promotion-container-inner promotion-text">
       {flag}
     </div>
   </div>
 );
 
-// conditional rendering of the sliderPage
 const RenderSliderPage = sliderFlag => (
   <>
-    {sliderFlag === "1" && page(1)}
-    {sliderFlag === "2" && page(2)}
-    {sliderFlag === "3" && page(3)}
-    {sliderFlag === "4" && page(4)}
-    {sliderFlag === "5" && page(5)}
-    {sliderFlag === "6" && page(6)}
+    {sliderFlag === "desktop" && page("desktop")}
+    {sliderFlag === "tablet" && page("tablet")}
+    {sliderFlag === "mobile" && page("mobile")}
   </>
 );
 
 const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
   <div
-    className="promotion-2-nav-link"
-    id={tag}
+    className="promotion-nav-link"
+    id={sliderFlag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
-    <img src="" alt={""} />
+    <img src="" alt={''} />
     {tag}
   </div>
 );
 
-const Slider = () => {
-  const [sliderFlag, handlePromotion] = useState("1");
+const Slider1 = () => {
+  const [sliderFlag, handlePromotion] = useState("desktop");
   return (
-    <div className="section promotion promotion-2">
-      <div className="promotion-2-nav">
+    <div className="section promotion">
+      <div className="promotion-nav">
         {sliderPages.map(page =>
           buttonToChangeSliderPage(sliderFlag, handlePromotion, page)
         )}
@@ -53,4 +53,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Slider1;
