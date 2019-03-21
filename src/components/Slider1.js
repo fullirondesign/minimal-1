@@ -1,34 +1,40 @@
 import React, { useState } from "react";
 import changeSliderPage from "./functions/changeSliderPage";
+import planetSVG from "../img/SVG/SVG/SVG/planetSVG"; // TODO:cleanup folders of svg
 
 // data
 const sliderPages = ["desktop", "tablet", "mobile"];
 
 // template TODO: content rendering
 const page = flag => (
-
   <div className="promotion-container">
-  
     <div className="promotion-container-inner">
       <div className="circle" />
       <div className="circle" />
       <div className="circle" />
-      {flag==='mobile' && <img src="..\icons\iphone.png" alt="" />}
-      {flag==='tablet' && <img width='200px' heigh="auto" src="..\img\svg\apple.svg" alt="" />}
-      {flag==='desktop' && <img width='200px' height="auto" src="\img\SVG\white Image.svg" alt="" />} 
-      
+      {flag === "mobile" && <img src="..\icons\iphone.png" alt="" />}
+      {flag === "tablet" && (
+        <img width="200px" heigh="auto" src="..\img\svg\apple.svg" alt="" />
+      )}
+      {flag === "desktop" && (
+        <img
+          width="200px"
+          height="auto"
+          src="\img\SVG\white Image.svg"
+          alt=""
+        />
+      )}
     </div>
-    
+
     <div className="promotion-container-inner promotion-text">
       {/* {flag} */}
       <div className="promotion-container-inner-text--top">
-        
-        <planetSVG/>
+        {planetSVG()}
         <div className="promotion-container-inner-text--top-rewardText">
           app of the year
         </div>
       </div>
-      <div className="promotion-container-inner-text--bottom"></div>
+      <div className="promotion-container-inner-text--bottom" />
     </div>
   </div>
 );
@@ -47,7 +53,7 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
     id={sliderFlag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
-    <img src="" alt={''} />
+    <img src="" alt={""} />
     {tag}
   </div>
 );

@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+    width: fit-content;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+    @include text-regular();
+
+    &-link {
+        margin-left: 4px;
+        padding: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+        min-width: 100px;
+
+        &:hover {
+            box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
+            font-weight: 700;
+        }
+    }
+}

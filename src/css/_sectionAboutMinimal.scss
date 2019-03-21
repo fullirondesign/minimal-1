@@ -1,0 +1,39 @@
+.aboutMinimal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+
+    &-circle {
+        width: 400px;
+        height: 400px;
+        background: $background-default;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    .text {
+        @include text-promo;
+
+        &-promo {
+            @include text-promo;
+            padding-bottom: 2em;
+        }
+
+        &-regular {
+            @include text-regular;
+            padding: 2em;
+        }
+    }
+
+    &-img {
+        padding: 50px 20px 60px 20px;
+        height: 100px;
+
+        &-text {
+            position: relative;
+            bottom: 40px;
+            @include text-display();
+        }
+    }
+}
