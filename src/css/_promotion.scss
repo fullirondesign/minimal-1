@@ -6,14 +6,17 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    
+    // slider-navigation:
     &-nav {
-        position: absolute;
-        right: 0;
+        $slider-nav-width: 30%;
+        position: relative;
+        width: $slider-nav-width;
+        left: 100% - $slider-nav-width;
         z-index: 1;
         display: flex;
-        align-self: flex-start;
-        justify-self: flex-end;
+        // align-self: flex-end;
+        // justify-self: flex-end;
         align-items: center;
         justify-content: center;
 
