@@ -10,7 +10,9 @@ const page = flag => (
     <div className="promotion-container-inner">
       <div className="circle" />
     </div>
-    <div className="promotion-container-inner promotion-text">{flag}</div>
+    <div className="promotion-container-inner promotion-text">
+      {flag}
+    </div>
   </div>
 );
 
@@ -35,7 +37,7 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
     <img src="" alt={""} />
     {tag}
   </div>
-)
+);
 
 const Slider = () => {
   const [sliderFlag, handlePromotion] = useState("1");
@@ -46,9 +48,7 @@ const Slider = () => {
           buttonToChangeSliderPage(sliderFlag, handlePromotion, page)
         )}
       </div>
-        {sliderFlag.includes("1", "2", "3", "4", "5", "6") &&
-          RenderSliderPage(sliderFlag)
-        }
+      {sliderPages.includes(sliderFlag) && RenderSliderPage(sliderFlag)}
     </div>
   );
 };
