@@ -13,30 +13,43 @@ const page = flag => (
         <div className="circle" />
         <div className="circle" />
         <div className="circle" />
-        {flag === "mobile" && <img src="..\icons\iphone.png" alt="" />}
+        {flag === "mobile" && <img src="..\icons\iphone.png" alt="mobile" />}
         {flag === "tablet" && (
-          <img width="200px" heigh="auto" src="..\img\svg\apple.svg" alt="" />
+          <img width="400px" src="..\img\tablet.png" alt="mobile" />
         )}
         {flag === "desktop" && (
           <img
-            width="200px"
+            width="400px"
             height="auto"
             src="\img\SVG\white Image.svg"
-            alt=""
+            alt="pc"
           />
         )}
       </div>
     </div>
     <div className="promotion-text">
       {/* {flag} */}
-      <div className="promotion-container-text--top">
+      <div className="promotion-text--top">
         {planetSVG()}
-        <div className="promotion-container-text--top-rewardText">
-          app of the year
+        <div className="promotion-text--top-rewardText">
+          app of <br />the year
         </div>
       </div>
 
-      <div className="promotion-container-inner-text--bottom" />
+      <div className="promotion-text--bottom">
+        <div className="promotion-text--bottom">
+          my apps shoecase
+        </div>
+        <div className="promotion-text--bottom">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div className="promotion-text--bottom">
+          <div className="promotion-text--bottom-button">
+            <div className="promotion-text--bottom-button-inner" />
+            <div className="promotion-text--bottom-button-inner" />
+          </div>
+        </div>
+      </div>
     </div>
   </>
 );
@@ -55,8 +68,14 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
     id={sliderFlag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
-    <img src="" alt={""} />
-    {tag}
+    {tag === "mobile" && <img src="..\icons\mobile.png" alt="mobile" />}
+    {tag === "tablet" && (
+      <img width="50px" src="..\icons\tablet.png" alt="tablet" />
+    )}
+    {tag === "desktop" && (
+      <img width="75px" height="auto" src="\icons\desktop.png" alt="desktop" />
+    )}
+    {/* {tag} */}
   </div>
 );
 
