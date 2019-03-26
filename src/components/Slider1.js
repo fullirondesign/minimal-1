@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import changeSliderPage from "./functions/changeSliderPage";
 import planetSVG from "../img/SVG/SVG/SVG/planetSVG"; // TODO:cleanup folders of svg
-
+import classnames from "classnames";
 // data
 const sliderPages = ["desktop", "tablet", "mobile"];
 
@@ -40,13 +40,18 @@ const page = flag => (
         <div className="promotion-text--bottom">
           my apps shoecase
         </div>
-        <div className="promotion-text--bottom">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div className="promotion-text--bottom-capitalize">
+          Lorem ipsum dolor sit amet...
         </div>
         <div className="promotion-text--bottom">
           <div className="promotion-text--bottom-button">
-            <div className="promotion-text--bottom-button-inner" />
-            <div className="promotion-text--bottom-button-inner" />
+            <div className="promotion-text--bottom-button-inner-left" >
+            <img className="promotion-text--bottom-button-inner-left-img" src="..\icons\shape 4.png"></img>
+            </div>
+            <div className="promotion-text--bottom-button-inner-right" >
+            Buy now
+            
+            </div>
           </div>
         </div>
       </div>
@@ -64,10 +69,13 @@ const RenderSliderPage = sliderFlag => (
 
 const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
   <div
-    className="promotion-nav-link"
+    // className="promotion-nav-link"
+    className={classnames({ "promotion-nav-link": true }, { 'promotion-nav-link--active': sliderFlag===tag })}
     id={sliderFlag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
+
+
     {tag === "mobile" && <img src="..\icons\mobile.png" alt="mobile" />}
     {tag === "tablet" && (
       <img width="50px" src="..\icons\tablet.png" alt="tablet" />

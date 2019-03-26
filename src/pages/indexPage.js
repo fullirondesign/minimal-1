@@ -40,15 +40,12 @@ class indexPage extends Component {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
             dolores, explicabo qui perspiciatis at quos inventore consequuntur
             corrupti natus pariatur officia amet error dignissimos saepe
-            reprehenderit eum et? Quia autem veritatis repellat, corporis
-            laboriosam harum tenetur.
+            reprehenderit eum et?
+            corrupti natus pariatur officia amet error dignissimos saepe
+            reprehenderit eum et?
           </div>
           <div className="aboutMinimal-circle">
-            <img
-              className="aboutMinimal-img"
-              alt="anoutminimal-img"
-              src="..\icons\mobile2.png"
-            />
+            <img className="aboutMinimal-circle-line1" src="/img/Layer 5 copy@2x.png" />
             <div className="aboutMinimal-img-text">
               App of <br /> the <br /> year
             </div>

@@ -1,3 +1,4 @@
+@import "./variables";
 .aboutMinimal {
     display: flex;
     align-items: center;
@@ -7,28 +8,44 @@
     &-circle {
         width: 400px;
         height: 400px;
-        background: $background-default;
+        background-image: url("/img/Shape 6.png");
         border-radius: 50%;
         margin-top: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-line1{
+            align-items: center;
+            justify-content: center;
+        }
     }
-
+    
     .text {
         @include text-promo;
+
 
         &-promo {
             @include text-promo;
             padding-bottom: 2em;
+            text-transform: capitalize;
         }
 
         &-regular {
             @include text-regular;
             padding: 2em;
+            text-transform: capitalize;
+            text-align: center;
+            margin-left: 150px;
+            margin-right: 150px;
+        
         }
     }
 
     &-img {
         padding: 50px 20px 60px 20px;
-        height: 100px;
+        height: 100%;
 
         &-text {
             position: relative;
