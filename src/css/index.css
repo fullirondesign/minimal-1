@@ -1,7 +1,6 @@
 .promotion {
-  background: #1fd0c4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00b7ea), to(#009ec3));
-  background: linear-gradient(to bottom, #00b7ea 0%, #009ec3 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00737c), color-stop(#00878c), color-stop(#009c9a), color-stop(#00b2a7), to(#0fc7b1));
+  background-image: linear-gradient(to right bottom, #00737c, #00878c, #009c9a, #00b2a7, #0fc7b1);
   min-height: 539px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,11 +230,10 @@
   display: -ms-flexbox;
   display: flex;
   padding: 8px;
-  margin: 8px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -248,19 +246,37 @@
   color: rgba(0, 0, 0, 0.496);
 }
 
+.nav-line {
+  display: block;
+  width: 1px;
+  height: 1.5em;
+  background: black;
+  margin: auto 6px;
+}
+
 .nav-link {
   margin-left: 4px;
   padding: 12px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   font-weight: 400;
   min-width: 100px;
+  text-align: center;
+  width: 50px;
 }
 
 .nav-link:hover {
   -webkit-box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
           box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
   font-weight: 700;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+.nav-link:active {
+  color: black;
 }
 
 .aboutMinimal {
@@ -351,8 +367,29 @@ code {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.07);
+}
+
+.section.header .header-inner {
+  display: inherit;
+  max-width: 1200px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section#aboutMinimal {
@@ -403,10 +440,6 @@ code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container.logo {
-  margin-left: 10vw;
 }
 
 .hr {

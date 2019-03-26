@@ -1,25 +1,48 @@
+@import "./variables";
+
 .nav {
     display: flex;
     padding: 8px;
-    margin: 8px;
+    // margin-right: 10vw;
     width: fit-content;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     align-content: center;
     justify-content: center;
     @include text-regular();
 
+    &-line {
+        display: block;
+        width: 1px;
+        height: 1.5em;
+        background: black;
+        margin: auto 6px;
+    }
+
     &-link {
         margin-left: 4px;
         padding: 12px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         text-decoration: none;
         font-weight: 400;
         min-width: 100px;
+        text-align: center;
+        width: 50px;
 
         &:hover {
             box-shadow: inset 0px 1px 2px 0px rgba(47, 28, 28, 0.25);
             font-weight: 700;
         }
+
+        &:visited {
+            color: black;
+        }
+
+        
+
+        &:active {
+            color: black;
+        }
+        
     }
 }
