@@ -29,6 +29,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: 1 / 1 / 4 / 5;
+<<<<<<< HEAD
   padding: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +94,8 @@
 .promotion-image-inner img {
   z-index: 5;
   position: absolute;
+=======
+>>>>>>> parent of 45855f9... navigation grideed))
 }
 
 .promotion-text {
@@ -101,16 +104,6 @@
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
   grid-area: 1 / 5 / 4 / 9;
-  padding: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .promotion-nav {
@@ -120,9 +113,6 @@
   -ms-grid-column-span: 3;
   grid-area: 1 / 6 / 2 / 9;
   z-index: 1;
-  height: 62%;
-  width: 100%;
-  background: #80808030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,9 +122,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  justify-self: flex-start;
 }
 
 .promotion-nav img {
@@ -143,10 +130,8 @@
 }
 
 .promotion-nav-link {
-  width: 33%;
-  height: 100%;
-  margin: 0px;
   text-transform: uppercase;
+  background: #17c0b5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,10 +141,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 123px;
+  height: 100%;
+  margin: 0px;
 }
 
 .promotion-nav-link#desktop {
+  background: rgba(14, 176, 165, 0.183);
   border-bottom-left-radius: 4px;
+}
+
+.promotion-nav-link#tablet {
+  background: rgba(10, 160, 150, 0.184);
+}
+
+.promotion-nav-link#mobile {
+  background: rgba(3, 140, 140, 0.19);
 }
 
 .promotion-nav-link:hover {
