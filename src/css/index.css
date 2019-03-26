@@ -30,7 +30,6 @@
   -ms-grid-column-span: 4;
   grid-area: 1 / 1 / 4 / 5;
 <<<<<<< HEAD
-<<<<<<< HEAD
   padding: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,16 +53,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-}
-
-.promotion-text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 4;
-  grid-area: 1 / 5 / 4 / 9;
->>>>>>> parent of 45855f9... navigation grideed))
 }
 
 .promotion-image-inner-image .circle:nth-child(1) {
