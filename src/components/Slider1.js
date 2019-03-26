@@ -9,7 +9,7 @@ const sliderPages = ["desktop", "tablet", "mobile"];
 const page = flag => (
   <>
     <div className="promotion-image">
-      <div className="promotion-image-inner-image">
+      <div className="promotion-container-inner-image">
         <div className="circle" />
         <div className="circle" />
         <div className="circle" />
