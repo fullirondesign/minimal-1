@@ -144,7 +144,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            transition: .2s ease-in-out;
+            transition: .3s ease-out;
 
             .arrow {
                 min-height: 20px;
@@ -156,7 +156,7 @@
                 transform: rotate(45deg);
                 z-index: -1;
                 opacity: 0;
-                transition: .4s ease-in-out;
+                transition: .1s ease-out;
                 transition-delay: 0.1s;
 
                 &--active {
