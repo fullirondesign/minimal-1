@@ -83,7 +83,8 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
     {tag === "desktop" && (
       <img width="75px" height="auto" src="\icons\desktop.png" alt="desktop" />
     )}
-    {/* {tag} */}
+    <div className={classnames({ "arrow": true }, { 'arrow--active': sliderFlag===tag })}/>
+     {/* {tag} */}
   </div>
 );
 

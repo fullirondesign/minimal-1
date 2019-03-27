@@ -1,4 +1,5 @@
 @import "./variables";
+
 .promotion {
     background-image: linear-gradient(to right bottom, #00737c, #00878c, #009c9a, #00b2a7, #0fc7b1);
     min-height: 539px;
@@ -142,32 +143,41 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            transition: .2s ease-in-out;
 
+            .arrow {
+                min-height: 20px;
+                bottom: 15px;
+                width: 20px;
+                display: block;
+                background: $color-dark;
+                position: relative;
+                transform: rotate(45deg);
+                z-index: -1;
+                opacity: 0;
+                transition: .4s ease-in-out;
+                transition-delay: 0.1s;
+
+                &--active {
+                    opacity: 1;
+                    bottom: 0px;
+            }
+        }
             &--active {
-                background: #00828b;
+                background: $color-dark;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                &:after { 
-                    content: "";
-                    display: block;
-                    height: 21%;
-                    right: 40%;
-                    top: 62px;
-                    width: 24px;
-                    position: relative;
-                    transition: all 0.3s ease 0s;
-                    -webkit-transition: all 0.3s ease 0s;
-                    z-index: -5; 
-                    background: #00828b;
-                    transform: rotate(45deg);
-                }
+
 
             }
+
             & img {
                 opacity: 0.8;
-                
+                position: relative;
+                bottom: -10px;
             }
 
 
@@ -186,12 +196,13 @@
 
             &:hover {
                 box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
-                    & img {
-                        opacity: 1;
-                        
-                    }
+
+                & img {
+                    opacity: 1;
+
+                }
             }
-            
+
         }
     }
     
