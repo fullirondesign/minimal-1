@@ -373,6 +373,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -386,17 +390,16 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 25% 1fr 1fr;
+      grid-template-rows: 25% 1fr 1fr;
 }
 
 .promotion2-image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
-  grid-area: 1 / 1 / 4 / 5;
-  padding: 15%;
+  grid-area: 2 / 1 / 4 / 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,14 +409,41 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  z-index: 2;
+  width: 100%;
+}
+
+.promotion2-image-1 {
+  background: red;
+}
+
+.promotion2-image-2 {
+  background: blue;
+}
+
+.promotion2-image-3 {
+  background: green;
+}
+
+.promotion2-image-4 {
+  background: yellow;
+}
+
+.promotion2-image-5 {
+  background: red;
+}
+
+.promotion2-image-6 {
+  background: blue;
 }
 
 .promotion2-text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
-  grid-area: 1 / 5 / 4 / 9;
+  grid-area: 2 / 5 / 4 / 9;
   padding: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +462,30 @@
           flex-direction: column;
   height: 100%;
   font-size: 17px;
+}
+
+.promotion2-text-1 {
+  background: red;
+}
+
+.promotion2-text-2 {
+  background: blue;
+}
+
+.promotion2-text-3 {
+  background: green;
+}
+
+.promotion2-text-4 {
+  background: yellow;
+}
+
+.promotion2-text-5 {
+  background: red;
+}
+
+.promotion2-text-6 {
+  background: blue;
 }
 
 .promotion2-text--top {
@@ -459,7 +513,6 @@
 }
 
 .promotion2-text--bottom {
-  margin-top: 30px;
   font-size: 30px;
 }
 
@@ -482,7 +535,6 @@
 }
 
 .promotion2-text--bottom-button-inner-left {
-  background-color: #00737c;
   width: 50px;
   height: 100%;
   display: block;
@@ -498,7 +550,6 @@
 }
 
 .promotion2-text--bottom-button-inner-right {
-  background-color: #0fc7b1;
   width: 150px;
   font-size: 25px;
   display: -webkit-box;
@@ -516,15 +567,19 @@
 .promotion2-nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 3;
-  grid-area: 1 / 6 / 2 / 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: 1 / 1 / 2 / 9;
   z-index: 1;
-  height: 62%;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,47 +616,6 @@
           flex-direction: column;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;
-}
-
-.promotion2-nav-link .arrow {
-  min-height: 20px;
-  bottom: 15px;
-  width: 20px;
-  display: block;
-  background: #00828b;
-  position: relative;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: .05s ease-out;
-  transition: .05s ease-out;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.promotion2-nav-link .arrow--active {
-  opacity: 1;
-  bottom: 0px;
-}
-
-.promotion2-nav-link .arrow--active#desktop {
-  background: #046763;
-  border-bottom-left-radius: 4px;
-}
-
-.promotion2-nav-link .arrow--active#tablet {
-  background: #025b5b;
-}
-
-.promotion2-nav-link .arrow--active#mobile {
-  background: #015457;
-}
-
-.promotion2-nav-link .arrow--active#mobile img {
-  padding: 4px;
-  width: 25%;
-  height: 75%;
 }
 
 .promotion2-nav-link#desktop {
@@ -676,6 +690,12 @@
   opacity: 1;
 }
 
+.promotion2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .promotion2-containervd {
   width: 2px;
   height: 100%;
@@ -685,7 +705,6 @@
 }
 
 .promotion2-container-inner.promotion2-text {
-  background: rgba(255, 255, 255, 0.054);
   border-left: 3px solid rgba(0, 0, 0, 0.217);
   border-bottom-right-radius: 16px;
   border-top-right-radius: 16px;

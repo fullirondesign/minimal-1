@@ -4,6 +4,7 @@
     background-image: linear-gradient(to right bottom, #00737c, #00878c, #009c9a, #00b2a7, #0fc7b1);
     min-height: 539px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -13,19 +14,43 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 25% 1fr 1fr;
+
+    
 
     &-image {
         // background: red;
-        grid-area: 1 / 1 / 4 / 5;
-        padding: 15%;
+        grid-area: 2 / 1 / 4 / 5;
+        // padding: 15%;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        z-index: 2;
+        width: 100%;
+        &-1 {
+            background: red;
+        }
+        &-2 {
+            background: blue;
+        }
+        &-3 {
+            background: green;
+        }
+        &-4 {
+            background: yellow;
+        }
+        &-5 {
+            background: red;
+        }
+        &-6 {
+            background: blue;
+        }
     }
+    
 
     &-text {
-        grid-area: 1 / 5 / 4 / 9;
+        grid-area: 2 / 5 / 4 / 9;
         padding: 0%;
         display: flex;
         align-items: flex-start;
@@ -35,6 +60,27 @@
         flex-direction: column;
         height: 100%;
         font-size: 17px;
+        
+        &-1 {
+            background: red;
+        }
+        &-2 {
+            background: blue;
+        }
+        &-3 {
+            background: green;
+        }
+        &-4 {
+            background: yellow;
+        }
+        &-5 {
+            background: red;
+        }
+        &-6 {
+            background: blue;
+        }
+
+
 
         &--top {
             display: flex;
@@ -54,7 +100,7 @@
         }
 
         &--bottom {
-            margin-top: 30px;
+            // margin-top: 30px;
             font-size: 30px;
 
             &-capitalize {
@@ -85,7 +131,7 @@
 
                 &-inner {
                     &-left {
-                        background-color: #00737c;
+                        // background-color: #00737c;
                         width: 50px;
                         height: 100%;
                         display: block;
@@ -104,7 +150,7 @@
                     }
 
                     &-right {
-                        background-color: #0fc7b1;
+                        // background-color: #0fc7b1;
                         width: 150px;
                         font-size: 25px;
                         display: flex;
@@ -118,12 +164,13 @@
     }
 
     &-nav {
-        grid-area: 1 / 6 / 2 / 9;
+        grid-area: 1 / 1 / 2 / 9;
         z-index: 1;
-        height: 62%;
+        height: 100%;
         width: 100%;
         // background: #808080;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         align-self: flex-start;
@@ -146,41 +193,6 @@
             flex-direction: column;
             transition: .3s ease-out;
             // background: $color-main;
-            .arrow {
-                min-height: 20px;
-                bottom: 15px;
-                width: 20px;
-                display: block;
-                background: $color-dark;
-                position: relative;
-                transform: rotate(45deg);
-                z-index: -1;
-                opacity: 0;
-                transition: .05s ease-out;
-                transition-delay: 0.1s;
-
-                &--active {
-                    opacity: 1;
-                    bottom: 0px;
-                    &#desktop {
-                        background: rgb(6, 154, 148)/1.5;
-                        border-bottom-left-radius: 4px;
-                    }
-            
-                    &#tablet {
-                        background: rgb(3, 136, 137)/1.5;
-                    }
-            
-                    &#mobile {
-                        background: rgb(1, 126, 130) / 1.5;
-                        img {
-                            padding: 4px;
-                            width: 25%;
-                            height: 75%;
-                        }
-                    }
-            }
-        }
         
         &#desktop {
             background: #069A94;
@@ -251,6 +263,8 @@
     }
     
     &-container {
+        display: flex;
+        
 
         &vd {
             width: 2px;
@@ -262,7 +276,7 @@
 
         &-inner {
             &.promotion2-text {
-                background: rgba(255, 255, 255, 0.054);
+                // background: rgba(255, 255, 255, 0.054);
                 border-left: 3px solid rgba(0, 0, 0, 0.217);
                 border-bottom-right-radius: 16px;
                 border-top-right-radius: 16px;
@@ -276,7 +290,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                // margin-top: 40px; 
                 .circle {
                     $circle-size: 470px;
 
