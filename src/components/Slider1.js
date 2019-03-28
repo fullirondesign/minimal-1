@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import changeSliderPage from "./functions/changeSliderPage";
 import planetSVG from "../img/SVG/SVG/SVG/planetSVG"; // TODO:cleanup folders of svg
 import classnames from "classnames";
@@ -71,7 +71,7 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
   <div
     // className="promotion-nav-link"
     className={classnames({ "promotion-nav-link": true }, { 'promotion-nav-link--active': sliderFlag===tag })}
-    id={sliderFlag}
+    id={tag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
 
@@ -83,13 +83,32 @@ const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
     {tag === "desktop" && (
       <img width="75px" height="auto" src="\icons\desktop.png" alt="desktop" />
     )}
-    <div className={classnames({ "arrow": true }, { 'arrow--active': sliderFlag===tag })}/>
+    <div id={tag} className={classnames({ "arrow": true }, { 'arrow--active': sliderFlag===tag })}/>
      {/* {tag} */}
   </div>
 );
 
 const Slider1 = () => {
   const [sliderFlag, handlePromotion] = useState("mobile");
+
+  useEffect(
+    () => {
+      let timer = setTimeout(() => {
+        if (sliderFlag === "mobile") handlePromotion("desktop");
+        if (sliderFlag === "desktop") handlePromotion("tablet");
+        if (sliderFlag === "tablet") handlePromotion("mobile");
+      }, 100000)
+
+      // this will clear Timeout when component unmount like in willComponentUnmount
+      return () => {
+        clearTimeout(timer)
+      }
+    },
+    [sliderFlag] //useEffect will run only one time
+    //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
+  )
+
+
   return (
     <div className="section promotion">
       <div className="promotion-nav">
