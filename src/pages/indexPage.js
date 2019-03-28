@@ -45,7 +45,7 @@ class indexPage extends Component {
             reprehenderit eum et?
           </div>
           <div className="aboutMinimal-circle">
-            <img className="aboutMinimal-circle-line1" src="/img/Layer 5 copy@2x.png" />
+            {/* <img className="aboutMinimal-circle-line1" src="/img/Layer 5 copy@2x.png" /> */}
             <div className="aboutMinimal-img-text">
               App of <br /> the <br /> year
             </div>

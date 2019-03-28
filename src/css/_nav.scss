@@ -8,8 +8,10 @@
     text-transform: capitalize;
     text-decoration: none;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     @include text-regular();
+
 
     &-line {
         display: block;
@@ -17,6 +19,24 @@
         height: 1.5em;
         background: black;
         margin: auto 6px;
+
+        // 576px window width and more
+        @include sm {
+            display: none;
+        }
+
+        // 992px window width and more
+        // @include lg {
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     max-width: 1100px;
+        // }
+
+        // 1400px window width and more
+        // @include rwd(1400) {
+        //     margin-bottom: 20px;
+        //     margin-top: 20px;
+        // }
     }
 
     &-link {
@@ -38,11 +58,11 @@
             color: black;
         }
 
-        
+
 
         &:active {
             color: black;
         }
-        
+
     }
 }

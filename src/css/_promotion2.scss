@@ -1,6 +1,6 @@
 @import "./variables";
 
-.promotion {
+.promotion2{
     background-image: linear-gradient(to right bottom, #00737c, #00878c, #009c9a, #00b2a7, #0fc7b1);
     min-height: 539px;
     display: flex;
@@ -70,7 +70,7 @@
 
 
                 &:hover {
-                    & .promotion-text--bottom-button-inner {
+                    & .promotion2-text--bottom-button-inner {
                         &-left {
 
                             &-img {
@@ -261,7 +261,7 @@
         }
 
         &-inner {
-            &.promotion-text {
+            &.promotion2-text {
                 background: rgba(255, 255, 255, 0.054);
                 border-left: 3px solid rgba(0, 0, 0, 0.217);
                 border-bottom-right-radius: 16px;

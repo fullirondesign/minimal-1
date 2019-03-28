@@ -1,5 +1,6 @@
 @import './variables';
 @import './promotion';
+@import './promotion2';
 @import './nav';
 @import './sectionAboutMinimal';
 
@@ -42,6 +43,7 @@ code {
       align-items: center;
       align-self: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }  
   }
 
