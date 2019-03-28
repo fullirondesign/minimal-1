@@ -618,27 +618,31 @@
   transition: .3s ease-out;
 }
 
-.promotion2-nav-link#desktop {
-  background: #069A94;
-  border-bottom-left-radius: 4px;
+.promotion2-nav-link-1 {
+  background: red;
 }
 
-.promotion2-nav-link#tablet {
-  background: #038889;
+.promotion2-nav-link-2 {
+  background: blue;
 }
 
-.promotion2-nav-link#mobile {
-  background: #017E82;
+.promotion2-nav-link-3 {
+  background: green;
 }
 
-.promotion2-nav-link#mobile img {
-  padding: 4px;
-  width: 25%;
-  height: 75%;
+.promotion2-nav-link-4 {
+  background: yellow;
 }
 
-.promotion2-nav-link--active {
-  background: #00828b;
+.promotion2-nav-link-5 {
+  background: red;
+}
+
+.promotion2-nav-link-6 {
+  background: blue;
+}
+
+.promotion2--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,26 +658,26 @@
           flex-direction: column;
 }
 
-.promotion2-nav-link--active#desktop {
+.promotion2--active#desktop {
   background: #046763;
   border-bottom-left-radius: 4px;
 }
 
-.promotion2-nav-link--active#tablet {
+.promotion2--active#tablet {
   background: #025b5b;
 }
 
-.promotion2-nav-link--active#mobile {
+.promotion2--active#mobile {
   background: #015457;
 }
 
-.promotion2-nav-link--active#mobile img {
+.promotion2--active#mobile img {
   padding: 4px;
   width: 25%;
   height: 75%;
 }
 
-.promotion2-nav-link img {
+.promotion2 img {
   opacity: 1;
   position: relative;
   bottom: -10px;
@@ -681,12 +685,12 @@
   position: relative;
 }
 
-.promotion2-nav-link:hover {
+.promotion2:hover {
   -webkit-box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
           box-shadow: inset 0px 1px 9px 0px rgba(47, 28, 28, 0.25);
 }
 
-.promotion2-nav-link:hover img {
+.promotion2:hover img {
   opacity: 1;
 }
 

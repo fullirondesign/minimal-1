@@ -194,22 +194,26 @@
             transition: .3s ease-out;
             // background: $color-main;
         
-        &#desktop {
-            background: #069A94;
-            border-bottom-left-radius: 4px;
-        }
-
-        &#tablet {
-            background: #038889;
-        }
-
-        &#mobile {
-            background: #017E82;
-            img {
-                padding: 4px;
-                width: 25%;
-                height: 75%;
+            &-1 {
+                background: red;
             }
+            &-2 {
+                background: blue;
+            }
+            &-3 {
+                background: green;
+            }
+            &-4 {
+                background: yellow;
+            }
+            &-5 {
+                background: red;
+            }
+            &-6 {
+                background: blue;
+            }
+        }
+    
         }
 
             &--active {
@@ -230,7 +234,7 @@
                         height: 75%;
                     }
                 }
-                background: $color-dark;
+                // background: $color-dark;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -259,8 +263,8 @@
                 }
             }
 
-        }
-    }
+        
+    
     
     &-container {
         display: flex;

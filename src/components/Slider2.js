@@ -3,19 +3,29 @@ import changeSliderPage from "./functions/changeSliderPage";
 import planetSVG from "../img/SVG/SVG/SVG/planetSVG"; // TODO:cleanup folders of svg
 import classnames from "classnames";
 // data
-const sliderPages = ["1", "2", "3","4", "5", "6"];
+const sliderPages = ["1", "2", "3", "4", "5", "6"];
 
 // template TODO: content rendering
 const page = flag => (
   <>
-  {/* TODO: see why id is not working for styling here */}
-    <div id={flag} className={`promotion2-image promotion2-image-${flag}`} >
+    {/* TODO: see why id is not working for styling here */}
+    <div id={flag} className={`promotion2-image promotion2-image-${flag}`}>
       <div className="promotion2-container-inner-image">
-        
-
-        {flag === "1" && <img width="auto" height="200px" src="..\img\svg\search.svg" alt="search" />}
+        {flag === "1" && (
+          <img
+            width="auto"
+            height="200px"
+            src="..\img\svg\search.svg"
+            alt="search"
+          />
+        )}
         {flag === "2" && (
-          <img width="auto"  height="200px" src="..\img\svg\power.svg" alt="power" />
+          <img
+            width="auto"
+            height="200px"
+            src="..\img\svg\power.svg"
+            alt="power"
+          />
         )}
         {flag === "3" && (
           <img
@@ -26,13 +36,21 @@ const page = flag => (
           />
         )}
 
-        {flag === "4" && <img width="auto" height="200px" src="..\icons\iphone.png" alt="shop" />}
+        {flag === "4" && (
+          <img
+            width="auto"
+            height="200px"
+            src="..\icons\iphone.png"
+            alt="shop"
+          />
+        )}
         {flag === "5" && (
           <img width="auto" height="200px" src="..\img\tablet.png" alt="lock" />
         )}
         {flag === "6" && (
           <img
-          width="auto" height="200px"
+            width="auto"
+            height="200px"
             src="\img\SVG\white Image.svg"
             alt="star"
           />
@@ -40,32 +58,27 @@ const page = flag => (
       </div>
     </div>
 
-
     <div className={`promotion2-text promotion2-text-${flag}`}>
-      
-
       <div className="promotion2-text--bottom">
-        <div className="promotion2-text--bottom">
-          my apps showcase
-        </div>
+        <div className="promotion2-text--bottom">my apps showcase</div>
         <div className="promotion2-text--bottom-capitalize">
           Lorem ipsum dolor sit amet...
         </div>
         <div className="promotion2-text--bottom">
           <div className="promotion2-text--bottom-button">
-            <div className="promotion2-text--bottom-button-inner-left" >
-            <img className="promotion2-text--bottom-button-inner-left-img" src="..\icons\shape 4.png"></img>
+            <div className="promotion2-text--bottom-button-inner-left">
+              <img
+                className="promotion2-text--bottom-button-inner-left-img"
+                src="..\icons\shape 4.png"
+              />
             </div>
-            <div className="promotion2-text--bottom-button-inner-right" >
-            Buy now
-            
+            <div className="promotion2-text--bottom-button-inner-right">
+              Buy now
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-
   </>
 );
 
@@ -83,29 +96,48 @@ const RenderSliderPage = sliderFlag => (
 const buttonToChangeSliderPage = (sliderFlag, handlePromotion, tag) => (
   <div
     // className="promotion2-nav-link"
-    className={classnames({ "promotion2-nav-link": true }, { 'promotion2-nav-link--active': sliderFlag===tag })}
+    className={classnames(
+      { "promotion2-nav-link": true },
+
+      { "promotion2-nav-link--active": sliderFlag === tag },
+      `promotion2-nav-link-${tag}`
+    )}
     id={tag}
     onClick={e => changeSliderPage(sliderFlag, handlePromotion, tag, e)}
   >
-
-
-    {tag === "1" && <img width="50px" height="auto" src="..\img\svg\search.svg" alt="search" />}
+    {tag === "1" && (
+      <img
+        width="50px"
+        height="auto"
+        src="..\img\svg\search.svg"
+        alt="search"
+        
+      />
+    )}
     {tag === "2" && (
       <img width="50px" height="auto" src="..\img\svg\power.svg" alt="power" />
     )}
     {tag === "3" && (
       <img width="50px" height="auto" src="..\img\svg\apple.svg" alt="apple" />
     )}
-    {tag === "4" && <img width="50px" height="auto"  src="..\img\svg\shop.svg" alt="shop" />}
+    {tag === "4" && (
+      <img width="50px" height="auto" src="..\img\svg\shop.svg" alt="shop" />
+    )}
     {tag === "5" && (
-      <img width="50px" height="auto"  src="..\img\svg\lock.svg" alt="lock" />
+      <img width="50px" height="auto" src="..\img\svg\lock.svg" alt="lock" />
     )}
     {tag === "6" && (
-      <img width="50px" height="auto"  src="..\img\svg\star.svg" alt="star" />
+      <img width="50px" height="auto" src="..\img\svg\star.svg" alt="star" />
     )}
 
-    <div id={tag} className={classnames({ "arrow": true }, { 'arrow--active': sliderFlag===tag })}/>
-     {/* {tag} */}
+    <div
+      id={tag}
+      className={classnames(
+        { arrow: true },
+        { "arrow--active": sliderFlag === tag }
+      )}
+    />
+    {/* {tag} */}
   </div>
 );
 
@@ -121,17 +153,16 @@ const Slider1 = () => {
         if (sliderFlag === "4") handlePromotion("5");
         if (sliderFlag === "5") handlePromotion("6");
         if (sliderFlag === "6") handlePromotion("1");
-      }, 100000)
+      }, 100000);
 
       // this will clear Timeout when component unmount like in willComponentUnmount
       return () => {
-        clearTimeout(timer)
-      }
+        clearTimeout(timer);
+      };
     },
     [sliderFlag] //useEffect will run only one time
     //if you pass a value to array, like this [data] than clearTimeout will run every time this value changes (useEffect re-run)
-  )
-
+  );
 
   return (
     <div className="section promotion2">
