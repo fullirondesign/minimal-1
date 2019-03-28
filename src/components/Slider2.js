@@ -15,7 +15,7 @@ const page = flag => (
           <img
             width="auto"
             height="200px"
-            src="..\img\svg\search.svg"
+            src="..\img\SVG\white Image.svg"
             alt="search"
           />
         )}
@@ -23,7 +23,7 @@ const page = flag => (
           <img
             width="auto"
             height="200px"
-            src="..\img\svg\power.svg"
+            src="..\img\SVG\white Image.svg"
             alt="power"
           />
         )}
@@ -31,7 +31,7 @@ const page = flag => (
           <img
             width="auto"
             height="200px"
-            src="..\img\SVG\apple.svg"
+            src="..\img\SVG\white Image.svg"
             alt="apple"
           />
         )}
@@ -40,18 +40,18 @@ const page = flag => (
           <img
             width="auto"
             height="200px"
-            src="..\icons\iphone.png"
+            src="..\img\SVG\white Image.svg"
             alt="shop"
           />
         )}
         {flag === "5" && (
-          <img width="auto" height="200px" src="..\img\tablet.png" alt="lock" />
+          <img width="auto" height="200px" src="..\img\SVG\white Image.svg" alt="lock" />
         )}
         {flag === "6" && (
           <img
             width="auto"
             height="200px"
-            src="\img\SVG\white Image.svg"
+            src="..\img\SVG\white Image.svg"
             alt="star"
           />
         )}
@@ -153,7 +153,7 @@ const Slider1 = () => {
         if (sliderFlag === "4") handlePromotion("5");
         if (sliderFlag === "5") handlePromotion("6");
         if (sliderFlag === "6") handlePromotion("1");
-      }, 100000);
+      }, 10000);
 
       // this will clear Timeout when component unmount like in willComponentUnmount
       return () => {

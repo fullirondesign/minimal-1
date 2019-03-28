@@ -59,8 +59,8 @@ $screen-xl-min: 1200px;
 @mixin text-display {
     font-family: $font-sans;
     font-size: 40px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.612);
+    font-weight: 500;
+    color:white;
     text-transform: capitalize;
 }
 
@@ -94,3 +94,9 @@ sans-serif;
 
 $color-main: rgb(23, 192, 181);
 $color-dark: #00828b;
+$color-search:#01646C;
+$color-power:#097B84;
+$color-apple: #118F99;
+$color-shop: #1DA0AA;
+$color-lock: #29B7C2;
+$color-star: #3CCAD5;

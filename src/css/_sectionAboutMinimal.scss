@@ -1,4 +1,5 @@
 @import "./variables";
+
 .aboutMinimal {
     display: flex;
     align-items: center;
@@ -16,15 +17,75 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative; 
+
         &-line1{
+            position: absolute;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            left: 50px;
+            margin: auto;
+            z-index: -3;
+        }
+        &-line2{
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            right: -50px;
+            margin: auto;
+            // width: 100%;
+            z-index: -4;
+        }
+        &-line3{
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            // right: 0;
+            top: 20%;
+            margin: auto;
+            z-index: 2;
+          
+        }
+        &-img {
+            // padding: 50px 20px 60px 20px;
+            // height: 100%;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            color: white;
+            
+    
+            &-text {
+                position: relative;
+                // background: red;
+                bottom: -85px;
+                display: block;
+                z-index: 1;
+                display: flex;
+                flex-direction: column; 
+                justify-content: center;
+                align-items:center;
+                color: white;
+                
+                &-app {
+                    font-size: 100px;
+                    font-weight: 500;
+                    color: white;
+                }
+                &-off {
+                    color: inherit;
+                      
+                }
+                @include text-display();
+            }
         }
     }
     
     .text {
-        @include text-promo;
-
+            @include text-promo;
+            
 
         &-promo {
             @include text-promo;
@@ -43,14 +104,5 @@
         }
     }
 
-    &-img {
-        padding: 50px 20px 60px 20px;
-        height: 100%;
-
-        &-text {
-            position: relative;
-            bottom: 40px;
-            @include text-display();
-        }
-    }
+    
 }
