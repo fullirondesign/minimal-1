@@ -1,5 +1,5 @@
-a, a:link, a:visited, a:focus, a:hover, a:active, a:any-link, :any-link{
-  color:black;
+a, a:link, a:visited, a:focus, a:hover, a:active, a:any-link, body :any-link{
+  color:black !important;
   text-decoration:none; 
   cursor: pointer;
 }
