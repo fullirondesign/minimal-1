@@ -1,25 +1,26 @@
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 376px;
+$screen-sm-min: 411px;
 
 // Small tablets (portrait view)
-$screen-md-min: 468px;
+$screen-md-min: 768px;
 
 // Tablets and small desktops
-$screen-lg-min: 792px;
+$screen-lg-min: 1200px;
 
 // Large tablets and desktops
-$screen-xl-min: 1200px;
+$screen-xl-min: 1600px;
 
 // Small devices
 @mixin sm {
-    @media (max-width: #{$screen-sm-min}) {
+    @media (min-width: #{$screen-sm-min}) {
         @content;
     }
+
 }
 
 // Medium devices
 @mixin md {
-    @media (min-width: #{$screen-sm-min}) {
+    @media (min-width: #{$screen-md-min}) {
         @content;
     }
 }
@@ -43,7 +44,7 @@ $screen-xl-min: 1200px;
     @media (min-width: $screen+'px') {
         @content;
     }
- }
+}
 
 
 // -----------------------------------------
@@ -60,7 +61,7 @@ $screen-xl-min: 1200px;
     font-family: $font-sans;
     font-size: 40px;
     font-weight: 500;
-    color:white;
+    color: white;
     text-transform: capitalize;
 }
 

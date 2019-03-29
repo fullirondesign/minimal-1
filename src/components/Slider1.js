@@ -97,7 +97,7 @@ const Slider1 = () => {
         if (sliderFlag === "mobile") handlePromotion("desktop");
         if (sliderFlag === "desktop") handlePromotion("tablet");
         if (sliderFlag === "tablet") handlePromotion("mobile");
-      }, 10000)
+      }, 1000000)
 
       // this will clear Timeout when component unmount like in willComponentUnmount
       return () => {

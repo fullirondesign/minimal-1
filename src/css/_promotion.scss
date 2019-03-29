@@ -285,7 +285,14 @@
 				}
 
 				@include md {
-					max-width: 200px;
+					max-width: 150px;
+				}
+				@include lg {
+					max-width: 250px;
+				}
+
+				@include xl {
+					max-width: 400px;
 				}
 			}
 
