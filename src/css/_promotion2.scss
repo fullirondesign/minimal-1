@@ -26,9 +26,9 @@
     
 
     &-image {
-        // background: red;
+        
         grid-area: 2 / 1 / 4 / 5;
-        // padding: 15%;
+       
         display: flex;
         align-items: center;
         justify-content: center;
@@ -107,7 +107,7 @@
         }
 
         &--bottom {
-            // margin-top: 30px;
+            
             font-size: 30px;
 
             &-capitalize {
@@ -151,9 +151,7 @@
                             height: 70%;
                             width: 70%;
                             opacity: 0.85;
-                            // &:hover {
-                            //     opacity: 1;
-                            // }
+                            
                         }
                     }
 
@@ -176,7 +174,7 @@
         z-index: 1;
         height: 100%;
         width: 100%;
-        // background: #808080;
+       
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -194,13 +192,13 @@
             height: 100%;
             margin: 0px;
             text-transform: uppercase;
-            // background: $background-default;
+            
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             transition: .3s ease-out;
-            // background: $color-main;
+            
         
             &-1 {
                 background: $color-search;
@@ -242,14 +240,12 @@
                         height: 75%;
                     }
                 }
-                // background: $color-dark;
+               
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                // z-index: 2;
-                // position: relative;
-
+               
             }
 
             & img {
@@ -288,7 +284,7 @@
 
         &-inner {
             &.promotion2-text {
-                // background: rgba(255, 255, 255, 0.054);
+                
                 border-left: 3px solid rgba(0, 0, 0, 0.217);
                 border-bottom-right-radius: 16px;
                 border-top-right-radius: 16px;
@@ -302,7 +298,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                // margin-top: 40px; 
+                
                 .circle {
                     $circle-size: 470px;
 

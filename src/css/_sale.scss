@@ -1,13 +1,13 @@
 .sale {
 
-	// height: 500px;
+	
 	&-container {
 		display: flex;
 		width: 100%;
 		height: 100%;
 
 		&-inner {
-			// width: 50%;
+			
 			height: 100%;
 			align-items: center;
 			justify-content: center;
@@ -37,11 +37,10 @@
 
 			&-bot {
 				&-left {
-					// position: relative;
-					// left: -100px;
+					
 					display: flex;
 					flex-direction: column;
-					// color: $color-main;
+					
 					width: 60%;
 					background: white;
 					height: 100%;
