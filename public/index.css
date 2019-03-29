@@ -2,4 +2,9 @@
     color: red;
     font-weight: 900;
     text-decoration: none;
+
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color:black;
 }
