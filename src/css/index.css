@@ -219,15 +219,17 @@
 
 .promotion-nav-link .arrow--active#desktop {
   background: #046763;
-  border-bottom-left-radius: 4px;
+  bottom: 0px;
 }
 
 .promotion-nav-link .arrow--active#tablet {
   background: #025b5b;
+  bottom: 1px;
 }
 
 .promotion-nav-link .arrow--active#mobile {
   background: #015457;
+  bottom: 0px;
 }
 
 .promotion-nav-link .arrow--active#mobile img {
@@ -274,7 +276,7 @@
 
 .promotion-nav-link--active#desktop {
   background: #046763;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 1px;
 }
 
 .promotion-nav-link--active#tablet {
@@ -336,6 +338,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.promotion-container-inner-image img {
+  max-width: 400px;
 }
 
 .promotion-container-inner-image .circle:nth-child(1) {
@@ -946,7 +952,7 @@
   font-family: "Arial", sans-serif;
   font-size: 29px;
   color: #17c0b5;
-  color: rgba(0, 0, 0, 0.598);
+  color: black;
   text-transform: uppercase;
 }
 
@@ -954,7 +960,7 @@
   font-family: "Arial", sans-serif;
   font-size: 29px;
   color: #17c0b5;
-  color: rgba(0, 0, 0, 0.598);
+  color: black;
   text-transform: uppercase;
   padding-bottom: 2em;
   text-transform: capitalize;
@@ -968,8 +974,6 @@
   padding: 2em;
   text-transform: capitalize;
   text-align: center;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .sale-container {
@@ -1036,7 +1040,7 @@
   font-family: "Arial", sans-serif;
   font-size: 29px;
   color: #17c0b5;
-  color: rgba(0, 0, 0, 0.598);
+  color: black;
   text-transform: uppercase;
   color: #52d9b5;
 }

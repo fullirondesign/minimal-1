@@ -13,13 +13,13 @@ const page = flag => (
         <div className="circle" />
         <div className="circle" />
         <div className="circle" />
-        {flag === "mobile" && <img width="200px" src="..\icons\iphone.png" alt="mobile" />}
+        {flag === "mobile" && <img width="auto" src="..\icons\iphone.png" alt="mobile" />}
         {flag === "tablet" && (
-          <img width="350px" src="..\img\tablet.png" alt="mobile" />
+          <img width="auto" src="..\img\tablet.png" alt="mobile" />
         )}
         {flag === "desktop" && (
           <img
-            width="500px"
+            width="auto"
             height="auto"
             src="\img\SVG\white Image.svg"
             alt="pc"
