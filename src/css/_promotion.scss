@@ -23,6 +23,7 @@
 		align-items: center;
 		justify-content: center;
 	}
+	
 
 	&-text {
 		grid-area: 1 / 5 / 4 / 9;
@@ -269,7 +270,7 @@
 			margin: 22px;
 		}
 
-		&-image {
+		&-inner-image {
 			z-index: 5;
 			position: relative;
 			display: flex;
