@@ -23,7 +23,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 
 	&-text {
 		grid-area: 1 / 5 / 4 / 9;
@@ -51,9 +51,7 @@
 				fill-opacity: 0.5;
 			}
 
-			&-rewardText {
-                
-            }
+			&-rewardText {}
 		}
 
 		&--bottom {
@@ -81,9 +79,7 @@
 							}
 						}
 
-						&-right {
-
-                        }
+						&-right {}
 					}
 				}
 
@@ -217,7 +213,7 @@
 
 				&#tablet {
 					background: rgb(3, 136, 137)/1.5;
-					
+
 				}
 
 				&#mobile {
@@ -283,9 +279,14 @@
 
 			img {
 				max-width: 400px;
+
 				@include sm {
-					max-width: 150px;
-			}
+					max-width: 100px;
+				}
+
+				@include md {
+					max-width: 200px;
+				}
 			}
 
 			.circle {

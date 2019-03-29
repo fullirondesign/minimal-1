@@ -346,7 +346,13 @@
 
 @media (max-width: 376px) {
   .promotion-container-inner-image img {
-    max-width: 150px;
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 376px) {
+  .promotion-container-inner-image img {
+    max-width: 200px;
   }
 }
 
