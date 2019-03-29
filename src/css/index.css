@@ -344,6 +344,12 @@
   max-width: 400px;
 }
 
+@media (max-width: 376px) {
+  .promotion-container-inner-image img {
+    max-width: 150px;
+  }
+}
+
 .promotion-container-inner-image .circle:nth-child(1) {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.068);
