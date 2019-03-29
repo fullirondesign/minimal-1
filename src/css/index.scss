@@ -3,6 +3,7 @@
 @import './promotion2';
 @import './nav';
 @import './sectionAboutMinimal';
+@import './sale';
 
 // 
 
@@ -53,15 +54,17 @@ code {
   }
 
   &.sale {
-    min-height: 500px;
+    height: 500px;
     width: 100%;
-    background: #48d7b1;
+    background: $color-accent;
     @include flex-row(center);
   }
 
   &#copyright {
     @include flex-row(center);
     padding: 16px;
+    background: #fafafa;
+    max-width: 1168px;
   }
 }
 

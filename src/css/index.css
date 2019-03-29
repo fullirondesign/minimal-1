@@ -308,6 +308,14 @@
   opacity: 1;
 }
 
+.promotion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .promotion-containervd {
   width: 2px;
   height: 100%;
@@ -316,18 +324,9 @@
   margin: 22px;
 }
 
-.promotion-container-inner.promotion-text {
-  background: rgba(255, 255, 255, 0.054);
-  border-left: 3px solid rgba(0, 0, 0, 0.217);
-  border-bottom-right-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.promotion-container-inner-image {
+.promotion-container-image {
   z-index: 5;
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +338,7 @@
           justify-content: center;
 }
 
-.promotion-container-inner-image .circle:nth-child(1) {
+.promotion-container-image .circle:nth-child(1) {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.068);
   width: 470px;
@@ -348,7 +347,7 @@
   z-index: -3;
 }
 
-.promotion-container-inner-image .circle:nth-child(2) {
+.promotion-container-image .circle:nth-child(2) {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.074);
   width: 376px;
@@ -357,7 +356,7 @@
   z-index: -2;
 }
 
-.promotion-container-inner-image .circle:nth-child(3) {
+.promotion-container-image .circle:nth-child(3) {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.177);
   width: 282px;
@@ -946,6 +945,7 @@
 .aboutMinimal .text {
   font-family: "Arial", sans-serif;
   font-size: 29px;
+  color: #17c0b5;
   color: rgba(0, 0, 0, 0.598);
   text-transform: uppercase;
 }
@@ -953,6 +953,7 @@
 .aboutMinimal .text-promo {
   font-family: "Arial", sans-serif;
   font-size: 29px;
+  color: #17c0b5;
   color: rgba(0, 0, 0, 0.598);
   text-transform: uppercase;
   padding-bottom: 2em;
@@ -969,6 +970,93 @@
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.sale-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sale-container-inner {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sale-container-inner-image {
+  z-index: 5;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 40%;
+}
+
+.sale-container-inner-image img {
+  height: 100%;
+}
+
+.sale-container-inner.promotion-text {
+  background: rgba(255, 255, 255, 0.054);
+  border-left: 3px solid rgba(0, 0, 0, 0.217);
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.sale-container-inner-bot-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  background: white;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 29px;
+  color: #17c0b5;
+  color: rgba(0, 0, 0, 0.598);
+  text-transform: uppercase;
+  color: #52d9b5;
+}
+
+.sale-container-inner-bot-left .text-sale {
+  font-size: 126px;
+}
+
+.sale-container-inner-bot-left .text-sale2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.sale-container-inner-bot-left .text-sale3 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.sale-container-inner-bot-right {
+  width: 40%;
 }
 
 body {
@@ -1036,9 +1124,9 @@ code {
 }
 
 .section.sale {
-  min-height: 500px;
+  height: 500px;
   width: 100%;
-  background: #48d7b1;
+  background: #52d9b5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,6 +1157,8 @@ code {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 16px;
+  background: #fafafa;
+  max-width: 1168px;
 }
 
 .container {

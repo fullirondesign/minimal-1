@@ -67,7 +67,7 @@ $screen-xl-min: 1200px;
 @mixin text-promo {
     font-family: $font-sans;
     font-size: 29px;
-
+    color: $color-main;
     color: rgba(0, 0, 0, 0.598);
     text-transform: uppercase;
 }
@@ -100,3 +100,4 @@ $color-apple: #118F99;
 $color-shop: #1DA0AA;
 $color-lock: #29B7C2;
 $color-star: #3CCAD5;
+$color-accent: #52d9b5;
