@@ -14,7 +14,7 @@
 
 
     &-line {
-        display: block;
+        display: none;
         width: 1px;
         height: 1.5em;
         background: black;
@@ -22,7 +22,7 @@
 
         // 576px window width and more
         @include sm {
-            display: none;
+            display: block;
         }
 
         // 992px window width and more

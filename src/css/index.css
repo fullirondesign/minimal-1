@@ -927,7 +927,7 @@
 }
 
 .nav-line {
-  display: block;
+  display: none;
   width: 1px;
   height: 1.5em;
   background: black;
@@ -936,7 +936,7 @@
 
 @media (min-width: 411px) {
   .nav-line {
-    display: none;
+    display: block;
   }
 }
 
