@@ -4,81 +4,97 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0 40px 0;
-
-    &-circle {
-        width: 400px;
-        height: 400px;
-        background-image: url("/img/Shape 6.png");
-        border-radius: 50%;
-        margin-top: 40px;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative; 
-
-        &-line1{
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            left: 50px;
-            margin: auto;
-            z-index: -3;
-        }
-        &-line2{
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            right: -50px;
-            margin: auto;
-            
-            z-index: -4;
-        }
-        &-line3{
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            top: 20%;
-            margin: auto;
-            z-index: 2;
-          
-        }
-        &-img {
-            
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            right: 0;
-            color: white;
-            
-    
-            &-text {
-                position: relative;
-                bottom: -85px;
-                display: block;
-                z-index: 1;
-                display: flex;
-                flex-direction: column; 
-                justify-content: center;
-                align-items:center;
-                color: white;
-                
-                &-app {
-                    font-size: 100px;
-                    font-weight: 500;
-                    color: white;
-                }
-                &-off {
-                    color: inherit;
-
-                }
-                @include text-display();
-            }
+    // padding: 40px 0 40px 0;
+    // width: 100vw;
+    height: auto; 
+    width: fit-content;
+    margin: 0;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    overscroll-behavior: none;
+    svg{
+        position: relative;
+        width: auto;
+        // height: 300px;
+        margin: 0 auto;
+        path {
+            fill: white;
         }
     }
+    // &-circle {
+    //     position: relative; 
+    //     width: 100%;
+    //     max-width: 400px;
+    //     height: auto;
+    //     max-height: 400px;
+    //     background-image: url("/img/Shape 6.png");
+    //     border-radius: 50%;
+    //     margin-top: 40px;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: center;
+    //     display: block;
+    //     &-line1{
+    //         position: relative;
+    //         width: 100%;
+    //         left: 315px;
+    //         height: 100%;
+    //         z-index: -3;
+    //         transform: rotate(3.5deg);
+    //     }
+    //     &-line2{
+    //         position: relative;
+    //         width: 100%;
+    //         z-index: -4;
+    //         height: 100%;
+    //         transform: rotate(3.5deg);
+    //         right: 93px;
+    //     }
+    //     &-line3{
+    //         position: relative;
+    //         z-index: 12;
+    //         width: auto;
+    //         height: 122px;
+    //         right: 351px;
+    //         top: -91px;
+    //     }
+    //     &-img {
+            
+    //         position: relative;
+    //         right: 0;
+    //         color: white;
+            
+    
+    //         &-text {
+    //             position: relative;
+    //             // bottom: -85px;
+    //             display: block;
+    //             z-index: 11;
+    //             display: flex;
+    //             flex-direction: column; 
+    //             justify-content: center;
+    //             align-items:center;
+    //             color: white;
+    //             right: 400px;
+    //             bottom: -100px;
+    //             &-app {
+    //                 font-size: 100px;
+    //                 font-weight: 500;
+    //                 color: white;
+    //                 @include text-display-custom(48px);
+    //             }
+    //             &-off {
+    //                 color: inherit;
+    //                 @include text-display-custom(22px);
+
+    //             }
+                
+    //         }
+    //     }
+    // }
     
     .text {
             @include text-promo;

@@ -13,24 +13,24 @@ const page = flag => (
       <div className="promotion2-container-inner-image">
         {flag === "1" && (
           <img
-            width="auto"
-            height="200px"
+            // width="auto"
+            // height="200px"
             src="..\img\SVG\white Image.svg"
             alt="search"
           />
         )}
         {flag === "2" && (
           <img
-            width="auto"
-            height="200px"
+            // width="auto"
+            // height="200px"
             src="..\img\SVG\white Image.svg"
             alt="power"
           />
         )}
         {flag === "3" && (
           <img
-            width="auto"
-            height="200px"
+            // width="auto"
+            // height="200px"
             src="..\img\SVG\white Image.svg"
             alt="apple"
           />
@@ -60,11 +60,11 @@ const page = flag => (
 
     <div className={`promotion2-text promotion2-text-${flag}`}>
       <div className="promotion2-text--bottom">
-        <div className="promotion2-text--bottom">my apps showcase</div>
+        <div className="promotion2-text--bottom-title">my apps showcase</div>
         <div className="promotion2-text--bottom-capitalize">
           Lorem ipsum dolor sit amet...
         </div>
-        <div className="promotion2-text--bottom">
+        
           <div className="promotion2-text--bottom-button">
             <div className="promotion2-text--bottom-button-inner-left">
               <img
@@ -72,11 +72,11 @@ const page = flag => (
                 src="..\icons\shape 4.png"
               />
             </div>
-            <div className="promotion2-text--bottom-button-inner-right">
+            <div className="promotion2-text--bottom-button-inner-rightText">
               Buy now
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   </>
@@ -153,7 +153,7 @@ const Slider1 = () => {
         if (sliderFlag === "4") handlePromotion("5");
         if (sliderFlag === "5") handlePromotion("6");
         if (sliderFlag === "6") handlePromotion("1");
-      }, 10000);
+      }, 1000000);
 
       // this will clear Timeout when component unmount like in willComponentUnmount
       return () => {

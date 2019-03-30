@@ -1,40 +1,49 @@
+// Smallest (really small)
+$screen-xs: 100px;
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 411px;
+$screen-sm: 411px;
 
 // Small tablets (portrait view)
-$screen-md-min: 768px;
+$screen-md: 768px;
 
 // Tablets and small desktops
-$screen-lg-min: 1200px;
+$screen-lg: 1200px;
 
 // Large tablets and desktops
-$screen-xl-min: 1600px;
+$screen-xl: 1600px;
 
 // Small devices
-@mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
+@mixin xs { 
+    @media (min-width: #{$screen-xs}) {
+        @content;
+    }
+
+}
+@mixin sm { 
+    @media (min-width: #{$screen-sm}) {
         @content;
     }
 
 }
 
 // Medium devices
-@mixin md {
-    @media (min-width: #{$screen-md-min}) {
+@mixin md { //768
+    @media (min-width: #{$screen-md}) {
         @content;
     }
 }
 
 // Large devices
-@mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
+@mixin lg { // 1200
+    @media (min-width: #{$screen-lg}) {
         @content;
     }
+    
 }
 
 // Extra large devices
 @mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+    @media (min-width: #{$screen-lg}) {
         @content;
     }
 }
@@ -60,6 +69,13 @@ $screen-xl-min: 1600px;
 @mixin text-display {
     font-family: $font-sans;
     font-size: 40px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+}
+@mixin text-display-custom($size) {
+    font-family: $font-sans;
+    font-size: $size;;
     font-weight: 500;
     color: white;
     text-transform: capitalize;

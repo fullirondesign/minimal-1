@@ -278,21 +278,24 @@
 			justify-content: center;
 
 			img {
-				max-width: 400px;
+				// max-width: 400px;
 
+				@include xs {
+					width: 100px; 
+				}
 				@include sm {
-					max-width: 100px;
+					width: 150px; 
 				}
 
 				@include md {
-					max-width: 150px;
+					width: 200px;
 				}
 				@include lg {
-					max-width: 250px;
+					width: 250px;
 				}
 
 				@include xl {
-					max-width: 400px;
+					width: 300px;
 				}
 			}
 

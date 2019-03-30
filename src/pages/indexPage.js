@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider1 from "../components/Slider1"
 import Slider2 from "../components/Slider2"
+import circleSVG from "../img/SVG/SVG/SVG/appSVG"
 
 
 class indexPage extends Component {
@@ -42,26 +43,10 @@ class indexPage extends Component {
             dignissimos saepe reprehenderit eum et? corrupti natus pariatur
             officia amet error dignissimos saepe reprehenderit eum et?
           </div>
-          <div className="aboutMinimal-circle">
-            <img
-              className="aboutMinimal-circle-line1"
-              src="/img/Layer 5 copy@2x.png"
-            />
-            <img
-              className="aboutMinimal-circle-line2"
-              src="/img/Layer 5 copy.png"
-            />
-            <img
-              className="aboutMinimal-circle-line3"
-              src="../img/Shape 7.png"
-            />
-            <div className="aboutMinimal-circle-img-text">
-              <div className=" aboutMinimal-circle-img-text-app">App</div>
-
-              <div className=" aboutMinimal-circle-img-text-off">
-                off the year
-              </div>
-            </div>
+          <div className="aboutMinimal">
+            
+            {circleSVG()}
+            
           </div>
         </div>
 
