@@ -57,10 +57,10 @@ class indexPage extends Component {
         <div className="section sale">
           <div className="sale-container">
             <div className="sale-container-inner sale-container-inner-bot-left">
-              <div className="text-sale">60%</div>
-              <div className="text-sale2">of project</div>
-              <div className="text-sale3">
-               complete</div>
+              <div className="text"><div className="text-sale">60%</div></div>
+              <div className="text"><div className="text-sale2">of project</div></div>
+              <div className="text"><div className="text-sale3">
+               complete</div></div>
             </div>
             {/* <vd /> */}
             <div className="sale-container-inner-image">

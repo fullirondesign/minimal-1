@@ -46,23 +46,75 @@
 					height: 100%;
 					@include text-promo;
 					color: $color-accent;
+					align-items: center;
+					justify-items: center;
+					
+					.text {
+						margin: 0 auto;
+						position: relative;
+						display: -webkit-flex;
+						display: flex;
+						align-items: center;
+						justify-items: center;
+						overflow-wrap: break-word;
+						width: 100%;
+						text-align: left;
+						outline: white;
+						@include sm {
+							text-align: center;
+						}
+						.text-sale {
+							text-shadow: 1px 1px 1px white;
+							font-size: 100%;
+							width: 100%;
+							margin: 0 auto;
+							position: relative;
+							max-width: 200px;
+							word-break: keep-all;
+							text-overflow: clip;
+							overflow: visible;
+							@include sm {
+								font-size: 126px;
+								max-width: 300px;
+							}
+						}
+						.text-sale2 {
+							text-shadow: 1px 1px 1px white;
+							font-size: 20px;
+							width: fit-content;
+							margin: 0 auto;
+							position: relative;
+							max-width: 200px;
+							width: 100%;
+							word-break: keep-all;
+							text-overflow: ellipsis;
+							overflow: visible;
+							@include sm {
+								font-size: 50px;
+								max-width: 300px;
+							}
+	
+						}
+	
+						.text-sale3 {
+							text-shadow: 1px 1px 1px white;
+							font-size: 20px;
+							width: 100%;
+							margin: 0 auto;
+							position: relative;
+							max-width: 200px;
+							word-break: keep-all;
+							text-overflow: ellipsis;
+							overflow: visible;
+							@include sm {
+								font-size: 50px;
+								max-width: 300px;
+							}
+						}
 
-					.text-sale {
-
-						font-size: 126px;
 					}
 
-					.text-sale2 {
-						font-size: 50px;
-						text-transform: uppercase;
-
-					}
-
-					.text-sale3 {
-						font-size: 50px;
-						text-transform: uppercase;
-
-					}
+					
 				}
 
 				&-right {

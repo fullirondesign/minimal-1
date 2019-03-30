@@ -1091,20 +1091,92 @@
   color: black;
   text-transform: uppercase;
   color: #52d9b5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
-.sale-container-inner-bot-left .text-sale {
-  font-size: 126px;
+.sale-container-inner-bot-left .text {
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  overflow-wrap: break-word;
+  width: 100%;
+  text-align: left;
+  outline: white;
 }
 
-.sale-container-inner-bot-left .text-sale2 {
-  font-size: 50px;
-  text-transform: uppercase;
+@media (min-width: 411px) {
+  .sale-container-inner-bot-left .text {
+    text-align: center;
+  }
 }
 
-.sale-container-inner-bot-left .text-sale3 {
-  font-size: 50px;
-  text-transform: uppercase;
+.sale-container-inner-bot-left .text .text-sale {
+  text-shadow: 1px 1px 1px white;
+  font-size: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 200px;
+  word-break: keep-all;
+  text-overflow: clip;
+  overflow: visible;
+}
+
+@media (min-width: 411px) {
+  .sale-container-inner-bot-left .text .text-sale {
+    font-size: 126px;
+    max-width: 300px;
+  }
+}
+
+.sale-container-inner-bot-left .text .text-sale2 {
+  text-shadow: 1px 1px 1px white;
+  font-size: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  max-width: 200px;
+  width: 100%;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  overflow: visible;
+}
+
+@media (min-width: 411px) {
+  .sale-container-inner-bot-left .text .text-sale2 {
+    font-size: 50px;
+    max-width: 300px;
+  }
+}
+
+.sale-container-inner-bot-left .text .text-sale3 {
+  text-shadow: 1px 1px 1px white;
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 200px;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  overflow: visible;
+}
+
+@media (min-width: 411px) {
+  .sale-container-inner-bot-left .text .text-sale3 {
+    font-size: 50px;
+    max-width: 300px;
+  }
 }
 
 .sale-container-inner-bot-right {
