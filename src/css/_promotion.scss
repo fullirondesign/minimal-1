@@ -9,11 +9,11 @@
 	justify-content: center;
 	$slider-nav-width: 30%;
 	$promotion-height: 123px;
-	height: 600px;
-
+	min-height: 600px;
+	padding: 0  0 20px 0; 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 130px 300px 280px;
 
 
 	display: grid;
@@ -30,10 +30,10 @@
 		align-items: center;
 		justify-content: center;
 		@include xs {
-			grid-area: 2 / 1 / 3 / 9;
+			grid-area: 2 / 2 / 3 / 4;
 		}
 		@include sm {
-			grid-area: 2 / 1 / 3 / 9;
+			grid-area: 2 / 2 / 3 / 4;
 		}
 
 		@include md {
@@ -61,10 +61,10 @@
 		height: 100%;
 		font-size: 17px;
 		@include xs {
-			grid-area: 3 / 1 / 4 / 9;
+			grid-area: 3 / 2 / 4 / 8;
 		}
 		@include sm {
-			grid-area: 3 / 1 / 4 / 9;
+			grid-area: 3 / 2 / 4 / 6;
 		}
 
 		@include md {
@@ -98,7 +98,7 @@
 		&--bottom {
 			margin-top: 30px;
 			font-size: 30px;
-
+			width: 100%;
 			&-capitalize {
 				font-size: 15px;
 				text-transform: capitalize;
@@ -106,7 +106,8 @@
 
 			&-button {
 				margin-top: 20px;
-				width: 200px;
+				margin-bottom: 20px;
+				// max-width: 200px;
 				height: 50px;
 				display: flex;
 
@@ -145,12 +146,14 @@
 
 					&-right {
 						background-color: #0fc7b1;
-						width: 150px;
+						max-width: 150px;
 						font-size: 25px;
 						display: flex;
 						text-transform: capitalize;
 						justify-content: center;
 						align-items: center;
+						text-overflow: ellipsis;
+						padding: 2px 16px 5px 16px;
 					}
 				}
 			}
@@ -160,7 +163,7 @@
 	&-nav {
 		grid-area: 1 / span 4 / 2 / 9;
 		z-index: 1;
-		height: 62%;
+		height: 100%;
 		width: 100%;
 
 		display: flex;
@@ -177,7 +180,7 @@
 		&-link {
 			width: 33%;
 			height: 100%;
-			height: 124px;
+			// height: 124px;
 			margin: 0px;
 			text-transform: uppercase;
 
@@ -343,13 +346,13 @@
 			}
 
 			.circle {
-				$circle-size: 470px;
+				$circle-size: 180%;
 
 				&:nth-child(1) {
 					border-radius: 50%;
 					background: rgba(255, 255, 255, 0.068);
 					width: $circle-size;
-					height: $circle-size;
+					height: $circle-size * .86;
 					position: absolute;
 					z-index: -3;
 				}
@@ -357,8 +360,8 @@
 				&:nth-child(2) {
 					border-radius: 50%;
 					background: rgba(255, 255, 255, 0.074);
-					width: $circle-size * 0.8;
-					height: $circle-size * 0.8;
+					width: $circle-size * 0.8 ;
+					height: $circle-size * 0.8 * .86;
 					position: absolute;
 					z-index: -2;
 				}
@@ -367,7 +370,7 @@
 					border-radius: 50%;
 					background: rgba(255, 255, 255, 0.177);
 					width: $circle-size * 0.6;
-					height: $circle-size * 0.6;
+					height: $circle-size * 0.6 * .86;
 					position: absolute;
 					z-index: -1;
 				}
