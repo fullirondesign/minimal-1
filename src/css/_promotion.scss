@@ -117,7 +117,7 @@
 	}
 
 	&-nav {
-		grid-area: 1 / 6 / 2 / 9;
+		grid-area: 1 / span 4 / 2 / 9;
 		z-index: 1;
 		height: 62%;
 		width: 100%;
@@ -176,12 +176,7 @@
 					&#mobile {
 						background: rgb(1, 126, 130) / 1.5;
 						bottom: 0px;
-
-						img {
-							padding: 4px;
-							width: 25%;
-							height: 75%;
-						}
+						height: 100%;
 					}
 				}
 			}
@@ -197,11 +192,11 @@
 
 			&#mobile {
 				background: #017E82;
-
+				height: 100%;
 				img {
 					padding: 4px;
-					width: 25%;
-					height: 75%;
+					// width: 25%;
+					height: 100%;
 				}
 			}
 

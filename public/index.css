@@ -8,3 +8,9 @@
 a, a:link, a:visited, a:focus, a:hover, a:active {
     color:black;
 }
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
