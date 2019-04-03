@@ -20,6 +20,9 @@
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow-wrap: normal;
 }
 
 .promotion-image {
@@ -38,6 +41,56 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 100px) {
+  .promotion-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: 2 / 1 / 3 / 9;
+  }
+}
+
+@media (min-width: 411px) {
+  .promotion-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: 2 / 1 / 3 / 9;
+  }
+}
+
+@media (min-width: 768px) {
+  .promotion-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 1 / 4 / 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 1 / 4 / 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 1 / 4 / 5;
+  }
 }
 
 .promotion-text {
@@ -64,6 +117,56 @@
           flex-direction: column;
   height: 100%;
   font-size: 17px;
+}
+
+@media (min-width: 100px) {
+  .promotion-text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: 3 / 1 / 4 / 9;
+  }
+}
+
+@media (min-width: 411px) {
+  .promotion-text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: 3 / 1 / 4 / 9;
+  }
+}
+
+@media (min-width: 768px) {
+  .promotion-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 5 / 4 / 9;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 5 / 4 / 9;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 5 / 4 / 9;
+  }
 }
 
 .promotion-text--top {
