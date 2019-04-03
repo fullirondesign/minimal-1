@@ -129,13 +129,14 @@
 		justify-self: flex-start;
 
 		img {
-			height: 60%;
-			margin: 20%;
+			// height: 60%;
+			// margin: 20%;
 		}
 
 		&-link {
 			width: 33%;
 			height: 100%;
+			height: 124px;
 			margin: 0px;
 			text-transform: uppercase;
 
@@ -158,6 +159,11 @@
 				transition: .05s ease-out;
 				transition-delay: 0.1s;
 
+				bottom: -20px;
+    			height: 10px;
+    			width: 20px;
+
+
 				&--active {
 					opacity: 1;
 					bottom: 0px;
@@ -165,18 +171,19 @@
 					&#desktop {
 						background: rgb(6, 154, 148)/1.5;
 						// border-bottom-left-radius: 4px;
-						bottom: 0px;
+						bottom: -26px;
 					}
 
 					&#tablet {
 						background: rgb(3, 136, 137)/1.5;
-						bottom: 1px;
+						bottom: -24px;
 					}
 
 					&#mobile {
 						background: rgb(1, 126, 130) / 1.5;
-						bottom: 0px;
-						height: 100%;
+						bottom: -11px;
+						height: 10px;
+						
 					}
 				}
 			}
@@ -195,8 +202,8 @@
 				height: 100%;
 				img {
 					padding: 4px;
-					// width: 25%;
-					height: 100%;
+					width: 40px;
+					height: 75%;
 				}
 			}
 
@@ -216,7 +223,7 @@
 
 					img {
 						padding: 4px;
-						width: 25%;
+						width: 40px;
 						height: 75%;
 					}
 				}
