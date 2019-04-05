@@ -153,7 +153,7 @@ const Slider1 = () => {
         if (sliderFlag === "4") handlePromotion("5");
         if (sliderFlag === "5") handlePromotion("6");
         if (sliderFlag === "6") handlePromotion("1");
-      }, 1000000);
+      }, 6000);
 
       // this will clear Timeout when component unmount like in willComponentUnmount
       return () => {
