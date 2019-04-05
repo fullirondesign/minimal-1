@@ -8,7 +8,7 @@ const sliderPages = ["desktop", "tablet", "mobile"];
 // template TODO: content rendering
 const page = flag => (
   <>
-    <div className="promotion-image">
+    
       <div className="promotion-container-inner-image">
         <div className="circle" />
         <div className="circle" />
@@ -25,7 +25,7 @@ const page = flag => (
             alt="pc"
           />
         )}
-      </div>
+      
     </div>
     <div className="promotion-text">
       {/* {flag} */}
